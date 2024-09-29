@@ -27,27 +27,34 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
           >
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 tracking-tight">
-              AI, Jobs{' '}
+              Kavetech{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
-                Assistant
+                Africa
               </span>
             </h1>
             <p className="mt-6 text-xl text-gray-600">
-             Experience the power of AI in finding the right jobs for you with our AI-powered job search assistant.
+              Revolutionizing African businesses with cutting-edge website and web app creation services that automatically boost sales.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
-            <Link to={"/dashboard"}>
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-8 py-3 flex justify-center items-center rounded-full bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold shadow-lg hover:shadow-xl transition duration-300"
-              >
-                Go to Jobs
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </motion.button>
+              <Link to="/contact">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="px-8 py-3 flex justify-center items-center rounded-full bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold shadow-lg hover:shadow-xl transition duration-300"
+                >
+                  Get Started
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </motion.button>
               </Link>
-
-            
+              <Link to="/portfolio">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="px-8 py-3 flex justify-center items-center rounded-full border-2 border-purple-600 text-purple-600 font-semibold hover:bg-purple-50 transition duration-300"
+                >
+                  View Our Work
+                </motion.button>
+              </Link>
             </div>
           </motion.div>
 
@@ -60,21 +67,13 @@ const Hero = () => {
             <div className="aspect-w-16 aspect-h-9">
               <iframe
                 src="https://www.youtube.com/embed/vkdLST5UkEQ?si=M51DoVBHfXEA1qF0&rel=0&loop=1"
-                title="Product Demo Video"
+                title="Kavetech Africa Demo Video"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
                 className="w-full aspect-video border-indigo/400/30 rounded-lg shadow-lg"
               ></iframe>
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none"></div>
-            <motion.div
-              initial={{ opacity: 0, scale: 0.5 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 1 }}
-              className="absolute inset-0 flex items-center justify-center pointer-events-none"
-            >
-              
-            </motion.div>
           </motion.div>
         </div>
 
@@ -90,17 +89,17 @@ const Hero = () => {
             </div>
             <div className="relative flex justify-center">
               <span className="px-3 bg-gradient-to-br from-indigo-100 via-purple-50 to-pink-50 text-lg font-medium text-gray-900">
-                Why Choose Us
+                Why Choose Kavetech Africa
               </span>
             </div>
           </div>
           <ul className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            <FeatureItem text="Intuitive and easy to use interface" />
-            <FeatureItem text="Advanced AI-powered insights" />
-            <FeatureItem text="Seamless integration with your tools" />
-            <FeatureItem text="Real-time collaboration features" />
-            <FeatureItem text="Customizable workflows" />
-            <FeatureItem text="24/7 customer support" />
+            <FeatureItem text="Cutting-edge AI-powered web solutions" />
+            <FeatureItem text="Tailored for African business needs" />
+            <FeatureItem text="Automatic sales optimization" />
+            <FeatureItem text="Responsive and user-friendly designs" />
+            <FeatureItem text="Seamless integration with existing systems" />
+            <FeatureItem text="Ongoing support and maintenance" />
           </ul>
         </motion.div>
       </div>
