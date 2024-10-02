@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { ArrowRight, CheckCircle } from 'lucide-react'
-import demo from '../assets/demo.jpeg'
+import demo from '../assets/main.jpg'
 import { Link } from 'react-router-dom'
 
 
