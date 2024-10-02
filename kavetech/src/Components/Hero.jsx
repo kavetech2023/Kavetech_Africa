@@ -33,7 +33,7 @@ const Hero = () => {
               </span>
             </h1>
             <p className="mt-6 text-xl text-gray-600">
-              Revolutionizing African businesses with cutting-edge website and web app creation services that automatically boost sales.
+            We build world-class websites and digital marketing strategies to take your local business to international levels.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <Link to="/contact">
@@ -94,12 +94,12 @@ const Hero = () => {
             </div>
           </div>
           <ul className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            <FeatureItem text="Cutting-edge AI-powered web solutions" />
-            <FeatureItem text="Tailored for African business needs" />
-            <FeatureItem text="Automatic sales optimization" />
-            <FeatureItem text="Responsive and user-friendly designs" />
+            <FeatureItem text="Website Design & Development (mobile-friendly, focus on user experience)" />
+            <FeatureItem text="Search Engine Optimization (SEO) - Improve organic search ranking" />
+            <FeatureItem text="Social Media Marketing (tailored to African platforms)" />
+            <FeatureItem text="Pay-Per-Click Advertising (PPC) - reach targeted audiences on search engines" />
             <FeatureItem text="Seamless integration with existing systems" />
-            <FeatureItem text="Ongoing support and maintenance" />
+            <FeatureItem text="Digital Analytics & Reporting - track results and measure success" />
           </ul>
         </motion.div>
       </div>

@@ -11,6 +11,7 @@ const navItems = [
   { name: 'Services', href: '#services', offset: 100 },
   { name: 'Testimonials', href: '#testimonials', offset: 80 },
   { name: 'FAQs', href: '#pricing', offset: 50 },
+  { name: 'Contact Us', href: '#contact', offset: 50 },
 ]
 
 const MobileMenu = ({ open, setOpen }) => {

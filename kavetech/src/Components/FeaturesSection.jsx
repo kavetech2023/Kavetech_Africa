@@ -62,17 +62,17 @@ const FeaturesSection = () => {
             className="lg:w-1/2"
           >
             <h2 className="text-4xl font-bold mb-6 text-gray-900">
-              Let our AI
-              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> do all the work for you. </span>
+              We Build
+              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> Fast & Perfect.</span>
             </h2>
-            <p className="text-xl text-gray-600 mb-8">
-              Experience a new level of productivity with our cutting-edge tools designed to streamline your job application process and boost efficiency.
-            </p>
+            <p className="text-xl text-gray-600 mb-8">Our team of skilled professionals is dedicated to delivering high-quality digital solutions in record time, without compromising on excellence</p>
             <ul className="space-y-4 mb-10">
-              <FeatureItem text="AI-powered jobs suggestion" />
-              <FeatureItem text="Real-time resume editing" />
-              <FeatureItem text="Advanced analytics dashboard" />
-              <FeatureItem text="Customizable workflow templates" />
+              <FeatureItem text="Experienced Team" />
+              <FeatureItem text="Cutting-Edge Tools" />
+              <FeatureItem text="Quality Assurance" />
+              <FeatureItem text="Client Collaboration" />
+              <FeatureItem text="Timely Delivery" />
+              <FeatureItem text="Cost-Effective Solutions" />
             </ul>
             <Link to="/edit">
               <motion.button
@@ -80,7 +80,7 @@ const FeaturesSection = () => {
                 whileTap={{ scale: 0.95 }}
                 className="px-8 py-3 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold shadow-lg hover:shadow-xl transition duration-300 flex items-center space-x-2"
               >
-                <span>Go to Resume Editor</span>
+                <span>Our Portfolio</span>
                 <ArrowRight className="w-5 h-5" />
               </motion.button>
             </Link>

@@ -5,6 +5,7 @@ import Footer from '../Components/Footer'
 import Navbar from '../Components/Navbar'
 import FAQSection from '../Components/FAQSection'
 import PortfolioShowcase from '../Components/PortfolioShowcase'
+import Contact from '../Components/Contact'
 
 
 
@@ -17,6 +18,7 @@ const Home = () => {
 <FeaturesSection />
 <PortfolioShowcase />
 <Testimonials />
+<Contact />
 <FAQSection />
 <Footer />
 

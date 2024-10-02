@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { motion } from 'framer-motion'
+
 import { Menu } from 'lucide-react'
 import MobileMenu from './MobileMenu'
 import logo from "../assets/logo.png"
@@ -9,8 +10,10 @@ import logo from "../assets/logo.png"
 const navItems = [
   { name: 'Home', href: '#home', offset: 100 },
   { name: 'How it Works', href: '#work', offset: 50 },
+  { name : 'Samples', href: '#portfolio', offset: 50 },
   { name: 'Testimonials', href: '#testimonials', offset: 80 },
   { name: 'FAQs', href: '#faqs', offset: 50 },
+  { name: 'Contact Us', href: '#contact', offset: 50 },
 ]
 
 const Navbar = () => {
@@ -44,10 +47,10 @@ const Navbar = () => {
             </nav>
             <div className="hidden md:block">
               <Link
-                to="/edit" scrollToTop
+                to="/contact"
                 className="inline-flex bg-black items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-primary-dark transition-colors"
               >
-                + My Resume
+                Contact Us
               </Link>
             </div>
             <div className="flex md:hidden">
