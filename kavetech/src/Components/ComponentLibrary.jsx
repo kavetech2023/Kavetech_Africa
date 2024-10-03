@@ -1,9 +1,9 @@
 import { useDrag } from 'react-dnd'
-import { Heading1, Paragraph, Image, Square, Columns, CreditCard, List, Video } from 'lucide-react'
+import { Heading1, Text, Image, Square, Columns, CreditCard, List, Video } from 'lucide-react'
 
 const componentTypes = [
   { type: 'heading', content: 'Heading', icon: Heading1 },
-  { type: 'paragraph', content: 'Paragraph', icon: Paragraph },
+  { type: 'paragraph', content: 'Paragraph', icon: Text },
   { type: 'image', content: 'Image', icon: Image },
   { type: 'button', content: 'Button', icon: Square },
   { type: 'columns', content: 'Columns', icon: Columns },
