@@ -4,6 +4,7 @@ import AIChatBot from "./Components/AIChatBot";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import Portfolio from "./Pages/Portfolio";
 import Contact from "./Pages/Contact";
+import WebBuilder from "./Pages/WebBuilder";
 const App = () => {
 
   return (
@@ -18,7 +19,7 @@ const App = () => {
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy_policy" element={<PrivacyPolicy />} />
-            
+            <Route path="/web_builder" element={<WebBuilder />} />
           </Routes>
           <AIChatBot />
         
