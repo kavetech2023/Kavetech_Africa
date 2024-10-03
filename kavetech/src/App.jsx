@@ -18,6 +18,7 @@ const App = () => {
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy_policy" element={<PrivacyPolicy />} />
+            
           </Routes>
           <AIChatBot />
         

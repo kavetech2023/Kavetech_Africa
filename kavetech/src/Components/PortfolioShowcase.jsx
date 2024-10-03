@@ -2,6 +2,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import { ArrowRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import screenshot1 from '../assets/portfolios/screenshot1.png'
+import screenshot2 from '../assets/portfolios/screenshot2.png'
+import screenshot3 from '../assets/portfolios/FireShot Capture 005 - Kavetech - Africa - www.kavetech.africa.png'
 
 const ProjectCard = ({ title, description, image, link }) => (
   <motion.div
@@ -10,7 +13,7 @@ const ProjectCard = ({ title, description, image, link }) => (
     transition={{ duration: 0.5 }}
     className="bg-white rounded-lg shadow-lg overflow-hidden"
   >
-    <img src={image} alt={title} className="w-full h-48 object-cover" />
+    <img src={image} alt={title} className="w-full h-72 object-cover" />
     <div className="p-6">
       <h3 className="text-xl font-semibold text-gray-900 mb-2">{title}</h3>
       <p className="text-gray-600 mb-4">{description}</p>
@@ -26,20 +29,20 @@ const PortfolioShowcase = () => {
     {
       title: "AfriMart E-commerce Platform",
       description: "A cutting-edge e-commerce solution that boosted sales by 200% for a major African retailer.",
-      image: "/placeholder.svg?height=300&width=400",
+      image: screenshot3,
       link: "/portfolio/afrimart"
     },
     {
-      title: "SafariTech Booking System",
-      description: "An AI-powered booking system that increased bookings by 150% for a leading safari company.",
-      image: "/placeholder.svg?height=300&width=400",
-      link: "/portfolio/safaritech"
+      title: "Gari Yangu",
+      description: "An AI-powered car purchase platform that increased conversions by 120%",
+      image: screenshot1,
+      link: "https://gari-yangu.vercel.app/"
     },
     {
-      title: "AgroConnect Farmer's Portal",
-      description: "A web app connecting farmers to markets, resulting in a 180% increase in produce sales.",
-      image: "/placeholder.svg?height=300&width=400",
-      link: "/portfolio/agroconnect"
+      title: "Keja Yangu",
+      description: "A web app connecting renters and landlords in Africa, resulting in a 180% increase in produce sales.",
+      image: screenshot2,
+      link: "https://keja-yangu.vercel.app/"
     }
   ];
 
