@@ -1,15 +1,19 @@
 import { useDrag } from 'react-dnd'
-import { Heading1, Text, Image, Square, Columns, CreditCard, List, Video } from 'lucide-react'
+import { Layout, Type, Image, Square, Columns, CreditCard, List, Video, Menu, Home } from 'lucide-react'
 
 const componentTypes = [
-  { type: 'heading', content: 'Heading', icon: Heading1 },
-  { type: 'paragraph', content: 'Paragraph', icon: Text },
-  { type: 'image', content: 'Image', icon: Image },
-  { type: 'button', content: 'Button', icon: Square },
-  { type: 'columns', content: 'Columns', icon: Columns },
-  { type: 'card', content: 'Card', icon: CreditCard },
-  { type: 'list', content: 'List', icon: List },
-  { type: 'video', content: 'Video', icon: Video },
+  { type: 'header1', content: 'Header 1', icon: Layout },
+  { type: 'header2', content: 'Header 2', icon: Menu },
+  { type: 'hero1', content: 'Hero Section 1', icon: Home },
+  { type: 'hero2', content: 'Hero Section 2', icon: Image },
+  { type: 'content1', content: 'Content Section 1', icon: Type },
+  { type: 'content2', content: 'Content Section 2', icon: Columns },
+  { type: 'footer1', content: 'Footer 1', icon: Layout },
+  { type: 'footer2', content: 'Footer 2', icon: CreditCard },
+  { type: 'gallery', content: 'Image Gallery', icon: Image },
+  { type: 'testimonials', content: 'Testimonials', icon: List },
+  { type: 'cta', content: 'Call to Action', icon: Square },
+  { type: 'video', content: 'Video Section', icon: Video },
 ]
 
 function DraggableComponent({ type, content, icon: Icon }) {

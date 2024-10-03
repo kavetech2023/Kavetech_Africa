@@ -3,13 +3,23 @@ import { HTML5Backend } from 'react-dnd-html5-backend'
 import ComponentLibrary from '../Components/ComponentLibrary'
 import BuilderCanvas from '../Components/BuilderCanvas'
 import { useState } from 'react'
-import { Layout, Sidebar, Menu } from 'lucide-react'
+import { Layout, Sidebar } from 'lucide-react'
 
 export default function WebBuilder() {
   const [components, setComponents] = useState([])
 
   const addComponent = (component) => {
-    setComponents([...components, component])
+    setComponents(prevComponents => [...prevComponents, component])
+  }
+
+  const updateComponent = (component) => {
+    setComponents(prevComponents => prevComponents.map(comp => 
+      comp.id === component.id ? { ...comp, ...component } : comp
+    ))
+  }
+
+  const removeComponent = (componentId) => {
+    setComponents(prevComponents => prevComponents.filter(comp => comp.id !== componentId))
   }
 
   return (
@@ -27,10 +37,6 @@ export default function WebBuilder() {
               <Sidebar className="w-4 h-4 mr-2" />
               Components
             </button>
-            <button className="w-full text-left py-2 px-4 rounded hover:bg-gray-100 transition-colors duration-200 flex items-center">
-              <Menu className="w-4 h-4 mr-2" />
-              Pages
-            </button>
           </nav>
         </div>
         <div className="flex-1 flex">
@@ -40,7 +46,12 @@ export default function WebBuilder() {
           </div>
           <div className="w-3/4 bg-gray-50 p-4 overflow-y-auto">
             <h2 className="text-xl font-bold mb-4">Builder Canvas</h2>
-            <BuilderCanvas components={components} addComponent={addComponent} />
+            <BuilderCanvas 
+              components={components}
+              addComponent={addComponent}
+              updateComponent={updateComponent}
+              removeComponent={removeComponent}
+            />
           </div>
         </div>
       </div>
