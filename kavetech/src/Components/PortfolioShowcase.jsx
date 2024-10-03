@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import screenshot1 from '../assets/portfolios/screenshot1.png'
 import screenshot2 from '../assets/portfolios/screenshot2.png'
-import screenshot3 from '../assets/portfolios/FireShot Capture 005 - Kavetech - Africa - www.kavetech.africa.png'
+import screenshot3 from '../assets/portfolios/screenshot3.png'
 
 const ProjectCard = ({ title, description, image, link }) => (
   <motion.div
@@ -27,7 +27,7 @@ const ProjectCard = ({ title, description, image, link }) => (
 const PortfolioShowcase = () => {
   const projects = [
     {
-      title: "AfriMart E-commerce Platform",
+      title: "Sales Management System",
       description: "A cutting-edge e-commerce solution that boosted sales by 200% for a major African retailer.",
       image: screenshot3,
       link: "/portfolio/afrimart"
