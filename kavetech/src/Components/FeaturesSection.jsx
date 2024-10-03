@@ -62,8 +62,8 @@ const FeaturesSection = () => {
             className="lg:w-1/2"
           >
             <h2 className="text-4xl font-bold mb-6 text-gray-900">
-              We Build
-              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> Fast & Perfect.</span>
+              Time is
+              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> Money.</span>
             </h2>
             <p className="text-xl text-gray-600 mb-8">Our team of skilled professionals is dedicated to delivering high-quality digital solutions in record time, without compromising on excellence</p>
             <ul className="space-y-4 mb-10">
