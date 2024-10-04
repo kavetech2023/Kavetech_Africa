@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import logo from '../assets/logo.png'
+import logo from '../assets/svg/logo-color.svg'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { motion, AnimatePresence } from 'framer-motion'
 import { X } from 'lucide-react'

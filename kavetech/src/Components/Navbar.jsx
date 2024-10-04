@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 
 import { Menu } from 'lucide-react'
 import MobileMenu from './MobileMenu'
-import logo from "../assets/logo.png"
+import logo from "../assets/svg/logo-transparent-cropped.svg"
 
 const navItems = [
   { name: 'Home', href: '#home', offset: 100 },

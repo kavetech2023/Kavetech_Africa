@@ -6,7 +6,7 @@ import Navbar from '../Components/Navbar'
 import FAQSection from '../Components/FAQSection'
 import PortfolioShowcase from '../Components/PortfolioShowcase'
 import Contact from '../Components/Contact'
-
+import CompanyLogosSlider from '../Components/CompanyLogosSlider'
 
 
 const Home = () => {
@@ -15,6 +15,7 @@ const Home = () => {
     
 <Navbar/>
 <Hero />
+<CompanyLogosSlider />
 <FeaturesSection />
 <PortfolioShowcase />
 <Testimonials />

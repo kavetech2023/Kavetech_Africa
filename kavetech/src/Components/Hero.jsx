@@ -73,7 +73,7 @@ const Hero = () => {
                 className="w-full aspect-video border-indigo/400/30 rounded-lg shadow-lg"
               ></iframe>
             </div>
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none"></div>
+            <div className="absolute  pointer-events-none"></div>
           </motion.div>
         </div>
 
