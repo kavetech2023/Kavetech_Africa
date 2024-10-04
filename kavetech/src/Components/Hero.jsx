@@ -33,7 +33,7 @@ const Hero = () => {
               </span>
             </h1>
             <p className="mt-6 text-xl text-gray-600">
-            We build world-class websites and digital marketing strategies to take your local business to international levels.
+            We build world-class sotware solutions (websites & apps), and digital marketing strategies to take your local business to international levels.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <Link to="/contact">
