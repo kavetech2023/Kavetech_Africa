@@ -34,7 +34,7 @@ const FeaturesSection = () => {
           >
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 rounded-3xl transform rotate-3 scale-105 opacity-20 blur-xl"></div>
-              <svg className='w-full min-h-[500px]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+              <svg className='w-full h-full' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
                 <defs>
                   <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
                     <feDropShadow dx="2" dy="2" stdDeviation="2" floodColor="#000000" floodOpacity="0.3"/>
