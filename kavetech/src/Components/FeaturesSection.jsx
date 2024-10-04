@@ -34,7 +34,7 @@ const FeaturesSection = () => {
           >
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 rounded-3xl transform rotate-3 scale-105 opacity-20 blur-xl"></div>
-              <svg className='w-full min-h-[400px]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+              <svg className='w-full min-h-[500px]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
                 <defs>
                   <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
                     <feDropShadow dx="2" dy="2" stdDeviation="2" floodColor="#000000" floodOpacity="0.3"/>
@@ -46,11 +46,11 @@ const FeaturesSection = () => {
                 </defs>
 
                 {/* Background */}
-                <rect width="100%" height="100%" fill="#f8f9fa"/>
+                <rect width="100%" height="500" fill="#f8f9fa"/>
 
                 {/* Website Frame */}
-                <rect x="50" y="50" width="700" height="300" rx="10" ry="10" fill="#ffffff" filter="url(#shadow)">
-                  <animate attributeName="height" from="0" to="300" dur="1s" fill="freeze" />
+                <rect x="50" y="50" width="700" height="400" rx="10" ry="10" fill="#ffffff" filter="url(#shadow)">
+                  <animate attributeName="height" from="0" to="400" dur="1s" fill="freeze" />
                 </rect>
 
                 {/* Header */}
@@ -71,8 +71,8 @@ const FeaturesSection = () => {
                 </rect>
 
                 {/* Main Content Area */}
-                <rect x="70" y="130" width="400" height="200" rx="5" ry="5" fill="#f1f3f5" filter="url(#shadow)">
-                  <animate attributeName="height" from="0" to="200" dur="0.8s" begin="1.6s" fill="freeze" />
+                <rect x="70" y="130" width="400" height="300" rx="5" ry="5" fill="#f1f3f5" filter="url(#shadow)">
+                  <animate attributeName="height" from="0" to="300" dur="0.8s" begin="1.6s" fill="freeze" />
                 </rect>
                 <rect x="90" y="150" width="360" height="20" rx="3" ry="3" fill="#e9ecef">
                   <animate attributeName="width" from="0" to="360" dur="0.6s" begin="2.4s" fill="freeze" />
@@ -83,13 +83,13 @@ const FeaturesSection = () => {
                 <rect x="90" y="210" width="280" height="20" rx="3" ry="3" fill="#e9ecef">
                   <animate attributeName="width" from="0" to="280" dur="0.6s" begin="2.8s" fill="freeze" />
                 </rect>
-                <rect x="90" y="240" width="360" height="70" rx="3" ry="3" fill="#e9ecef">
-                  <animate attributeName="height" from="0" to="70" dur="0.6s" begin="3s" fill="freeze" />
+                <rect x="90" y="240" width="360" height="170" rx="3" ry="3" fill="#e9ecef">
+                  <animate attributeName="height" from="0" to="170" dur="0.6s" begin="3s" fill="freeze" />
                 </rect>
 
                 {/* Sidebar */}
-                <rect x="490" y="130" width="240" height="200" rx="5" ry="5" fill="#e9ecef" filter="url(#shadow)">
-                  <animate attributeName="height" from="0" to="200" dur="0.8s" begin="3.2s" fill="freeze" />
+                <rect x="490" y="130" width="240" height="300" rx="5" ry="5" fill="#e9ecef" filter="url(#shadow)">
+                  <animate attributeName="height" from="0" to="300" dur="0.8s" begin="3.2s" fill="freeze" />
                 </rect>
                 <rect x="510" y="150" width="200" height="40" rx="3" ry="3" fill="#f1f3f5">
                   <animate attributeName="width" from="0" to="200" dur="0.5s" begin="4s" fill="freeze" />
@@ -100,36 +100,52 @@ const FeaturesSection = () => {
                 <rect x="510" y="250" width="200" height="40" rx="3" ry="3" fill="#f1f3f5">
                   <animate attributeName="width" from="0" to="200" dur="0.5s" begin="4.4s" fill="freeze" />
                 </rect>
+                <rect x="510" y="300" width="200" height="40" rx="3" ry="3" fill="#f1f3f5">
+                  <animate attributeName="width" from="0" to="200" dur="0.5s" begin="4.6s" fill="freeze" />
+                </rect>
+                <rect x="510" y="350" width="200" height="40" rx="3" ry="3" fill="#f1f3f5">
+                  <animate attributeName="width" from="0" to="200" dur="0.5s" begin="4.8s" fill="freeze" />
+                </rect>
 
                 {/* Animated Elements */}
                 <g>
                   <rect x="90" y="150" width="0" height="20" rx="3" ry="3" fill="#4a90e2">
-                    <animate attributeName="width" from="0" to="360" dur="1s" begin="4.6s" fill="freeze"/>
+                    <animate attributeName="width" from="0" to="360" dur="1s" begin="5s" fill="freeze"/>
                   </rect>
                 </g>
                 <g>
                   <rect x="90" y="180" width="0" height="20" rx="3" ry="3" fill="#4a90e2">
-                    <animate attributeName="width" from="0" to="320" dur="1s" begin="4.8s" fill="freeze"/>
+                    <animate attributeName="width" from="0" to="320" dur="1s" begin="5.2s" fill="freeze"/>
                   </rect>
                 </g>
                 <g>
                   <rect x="90" y="210" width="0" height="20" rx="3" ry="3" fill="#4a90e2">
-                    <animate attributeName="width" from="0" to="280" dur="1s" begin="5s" fill="freeze"/>
+                    <animate attributeName="width" from="0" to="280" dur="1s" begin="5.4s" fill="freeze"/>
                   </rect>
                 </g>
                 <g>
                   <rect x="510" y="150" width="0" height="40" rx="3" ry="3" fill="#9b59b6">
-                    <animate attributeName="width" from="0" to="200" dur="0.8s" begin="5.2s" fill="freeze"/>
+                    <animate attributeName="width" from="0" to="200" dur="0.8s" begin="5.6s" fill="freeze"/>
                   </rect>
                 </g>
                 <g>
                   <rect x="510" y="200" width="0" height="40" rx="3" ry="3" fill="#9b59b6">
-                    <animate attributeName="width" from="0" to="200" dur="0.8s" begin="5.4s" fill="freeze"/>
+                    <animate attributeName="width" from="0" to="200" dur="0.8s" begin="5.8s" fill="freeze"/>
                   </rect>
                 </g>
                 <g>
                   <rect x="510" y="250" width="0" height="40" rx="3" ry="3" fill="#9b59b6">
-                    <animate attributeName="width" from="0" to="200" dur="0.8s" begin="5.6s" fill="freeze"/>
+                    <animate attributeName="width" from="0" to="200" dur="0.8s" begin="6s" fill="freeze"/>
+                  </rect>
+                </g>
+                <g>
+                  <rect x="510" y="300" width="0" height="40" rx="3" ry="3" fill="#9b59b6">
+                    <animate attributeName="width" from="0" to="200" dur="0.8s" begin="6.2s" fill="freeze"/>
+                  </rect>
+                </g>
+                <g>
+                  <rect x="510" y="350" width="0" height="40" rx="3" ry="3" fill="#9b59b6">
+                    <animate attributeName="width" from="0" to="200" dur="0.8s" begin="6.4s" fill="freeze"/>
                   </rect>
                 </g>
               </svg>
