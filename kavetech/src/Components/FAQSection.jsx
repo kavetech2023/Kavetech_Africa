@@ -32,36 +32,36 @@ const FAQItem = ({ question, answer }) => {
 const FAQSection = () => {
   const faqs = [
     {
-      question: "What services does Kavetech offer?",
-      answer: "Kavetech specializes in providing cutting-edge AI and machine learning solutions for businesses. Our services include custom AI model development, data analysis and visualization, AI-powered automation, and AI integration consulting. We offer tailored solutions to fit various budgets and business sizes."
+      question: "How can your software solutions benefit my business?",
+      answer: "Our custom software solutions can revolutionize your business by streamlining processes, enhancing user experiences, and providing valuable insights. We build apps and websites tailored to your specific needs, leading to increased efficiency, reduced costs, and new revenue opportunities across various departments and industries."
     },
     {
-      question: "How can AI benefit my business without breaking the bank?",
-      answer: "AI can provide significant ROI by improving operational efficiency, enhancing decision-making processes, and automating repetitive tasks. We offer scalable solutions and flexible pricing models to ensure you get the most value for your investment. Our team will work with you to identify the most cost-effective AI solutions that align with your business goals and budget."
+      question: "Is custom software development expensive?",
+      answer: "Not with us. At Kavetech, we offer scalable software solutions to fit various budgets without compromising on quality. Our team works closely with you to identify cost-effective implementations that provide the highest ROI for your specific business needs."
     },
     {
-      question: "What makes Kavetech's team qualified to handle my AI needs?",
-      answer: "Our team consists of highly qualified professionals with advanced degrees in AI, machine learning, and data science from top institutions. We have a combined experience of over 50 years in the field and have successfully implemented AI solutions across various industries. Our experts have published research in leading AI journals and have worked with Fortune 500 companies."
+      question: "How does Kavetech ensure high-quality software solutions at competitive prices?",
+      answer: "We leverage our extensive expertise, efficient processes, and cutting-edge technologies to deliver premium software solutions cost-effectively. Our team's deep knowledge allows us to work smartly, reducing development time without sacrificing quality. We also use cloud technologies and open-source tools strategically to keep costs down while maintaining high standards."
     },
     {
-      question: "Can you provide examples of successful AI implementations by Kavetech?",
-      answer: "Absolutely! We've helped a mid-sized e-commerce company increase their sales by 30% through an AI-powered recommendation system, reduced operational costs by 25% for a manufacturing firm using predictive maintenance AI, and improved customer satisfaction by 40% for a telecom provider with our AI chatbot solution. We're happy to provide more detailed case studies upon request."
+      question: "What makes Kavetech different from other software development companies?",
+      answer: "Kavetech stands out with our combination of technical expertise, industry experience, and commitment to affordability. We offer tailored solutions that precisely fit your needs, ensuring you don't pay for unnecessary features. Our team has a proven track record of delivering innovative, high-impact solutions across various sectors."
     },
     {
-      question: "How does Kavetech ensure the quality of its AI solutions?",
-      answer: "Quality is at the core of everything we do. We follow industry best practices and rigorous testing protocols. Our solutions go through multiple rounds of validation and optimization before deployment. We also provide ongoing monitoring and maintenance to ensure continued performance. Our commitment to quality doesn't mean high costs - we believe in delivering premium solutions at competitive prices."
+      question: "How long does it take to develop a custom app or website?",
+      answer: "The timeline varies depending on the complexity of the project. Simple implementations can be completed in a few weeks, while more complex projects might take several months. We work efficiently to deliver results as quickly as possible without compromising on quality, and we always keep you informed about the progress and timeline."
     },
     {
-      question: "Is Kavetech a well-established company?",
-      answer: "Yes, Kavetech has been in business for over a decade. We're a financially stable company with a strong track record of successful projects and satisfied clients. We've been recognized in industry publications and have won several awards for our innovative AI solutions. Our long-standing partnerships with tech giants and our growing client base across various sectors speak to our reliability and expertise."
+      question: "Do I need technical expertise to work with Kavetech?",
+      answer: "Not at all. We specialize in translating your business needs into technical solutions. Our team will guide you through the entire process, explaining technical concepts in plain language and ensuring that the final product aligns perfectly with your vision and requirements."
     },
     {
-      question: "How does Kavetech handle data security and privacy?",
-      answer: "We take data security and privacy extremely seriously. All client data is handled with utmost care, using industry-standard encryption and security protocols. We are compliant with GDPR, CCPA, and other relevant data protection regulations. Our team includes certified information security professionals who ensure that all our processes and systems adhere to the highest security standards."
+      question: "How do you ensure the security and privacy of our data in the software you develop?",
+      answer: "Data security and privacy are our top priorities. We employ industry-standard encryption, secure cloud storage, and strict access controls in all our software solutions. Our development processes comply with GDPR, CCPA, and other relevant regulations. We're transparent about our data handling practices and can sign NDAs for added protection."
     },
     {
-      question: "What kind of support does Kavetech offer after implementation?",
-      answer: "We offer comprehensive post-implementation support to ensure the continued success of your AI solution. This includes regular maintenance, performance monitoring, updates, and technical support. We also provide training for your team and ongoing consultations to help you maximize the benefits of your AI investment. Our support packages are designed to be cost-effective while providing the assistance you need."
+      question: "What kind of support do you offer after the software is developed and implemented?",
+      answer: "We provide comprehensive post-implementation support, including system monitoring, regular maintenance, updates, and technical support. We also offer training for your team and ongoing consultations to ensure you're getting the most value from your software investment. Our support packages are designed to be both effective and affordable."
     }
   ];
 
