@@ -34,11 +34,105 @@ const FeaturesSection = () => {
           >
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 rounded-3xl transform rotate-3 scale-105 opacity-20 blur-xl"></div>
-              <img
-                src={demo}
-                alt="Product showcase"
-                className="relative rounded-3xl shadow-2xl"
-              />
+              <svg className='w-full min-h-[400px]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+                <defs>
+                  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+                    <feDropShadow dx="2" dy="2" stdDeviation="2" floodColor="#000000" floodOpacity="0.3"/>
+                  </filter>
+                  <linearGradient id="headerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stopColor="#4a90e2"/>
+                    <stop offset="100%" stopColor="#9b59b6"/>
+                  </linearGradient>
+                </defs>
+
+                {/* Background */}
+                <rect width="100%" height="100%" fill="#f8f9fa"/>
+
+                {/* Website Frame */}
+                <rect x="50" y="50" width="700" height="300" rx="10" ry="10" fill="#ffffff" filter="url(#shadow)">
+                  <animate attributeName="height" from="0" to="300" dur="1s" fill="freeze" />
+                </rect>
+
+                {/* Header */}
+                <rect x="50" y="50" width="700" height="60" rx="10" ry="10" fill="url(#headerGradient)">
+                  <animate attributeName="width" from="0" to="700" dur="0.8s" fill="freeze" />
+                </rect>
+                <circle cx="80" cy="80" r="15" fill="#ffffff">
+                  <animate attributeName="r" from="0" to="15" dur="0.5s" begin="0.8s" fill="freeze" />
+                </circle>
+                <rect x="110" y="70" width="100" height="20" rx="5" ry="5" fill="#ffffff" opacity="0.7">
+                  <animate attributeName="width" from="0" to="100" dur="0.5s" begin="1s" fill="freeze" />
+                </rect>
+                <rect x="220" y="70" width="100" height="20" rx="5" ry="5" fill="#ffffff" opacity="0.7">
+                  <animate attributeName="width" from="0" to="100" dur="0.5s" begin="1.2s" fill="freeze" />
+                </rect>
+                <rect x="330" y="70" width="100" height="20" rx="5" ry="5" fill="#ffffff" opacity="0.7">
+                  <animate attributeName="width" from="0" to="100" dur="0.5s" begin="1.4s" fill="freeze" />
+                </rect>
+
+                {/* Main Content Area */}
+                <rect x="70" y="130" width="400" height="200" rx="5" ry="5" fill="#f1f3f5" filter="url(#shadow)">
+                  <animate attributeName="height" from="0" to="200" dur="0.8s" begin="1.6s" fill="freeze" />
+                </rect>
+                <rect x="90" y="150" width="360" height="20" rx="3" ry="3" fill="#e9ecef">
+                  <animate attributeName="width" from="0" to="360" dur="0.6s" begin="2.4s" fill="freeze" />
+                </rect>
+                <rect x="90" y="180" width="320" height="20" rx="3" ry="3" fill="#e9ecef">
+                  <animate attributeName="width" from="0" to="320" dur="0.6s" begin="2.6s" fill="freeze" />
+                </rect>
+                <rect x="90" y="210" width="280" height="20" rx="3" ry="3" fill="#e9ecef">
+                  <animate attributeName="width" from="0" to="280" dur="0.6s" begin="2.8s" fill="freeze" />
+                </rect>
+                <rect x="90" y="240" width="360" height="70" rx="3" ry="3" fill="#e9ecef">
+                  <animate attributeName="height" from="0" to="70" dur="0.6s" begin="3s" fill="freeze" />
+                </rect>
+
+                {/* Sidebar */}
+                <rect x="490" y="130" width="240" height="200" rx="5" ry="5" fill="#e9ecef" filter="url(#shadow)">
+                  <animate attributeName="height" from="0" to="200" dur="0.8s" begin="3.2s" fill="freeze" />
+                </rect>
+                <rect x="510" y="150" width="200" height="40" rx="3" ry="3" fill="#f1f3f5">
+                  <animate attributeName="width" from="0" to="200" dur="0.5s" begin="4s" fill="freeze" />
+                </rect>
+                <rect x="510" y="200" width="200" height="40" rx="3" ry="3" fill="#f1f3f5">
+                  <animate attributeName="width" from="0" to="200" dur="0.5s" begin="4.2s" fill="freeze" />
+                </rect>
+                <rect x="510" y="250" width="200" height="40" rx="3" ry="3" fill="#f1f3f5">
+                  <animate attributeName="width" from="0" to="200" dur="0.5s" begin="4.4s" fill="freeze" />
+                </rect>
+
+                {/* Animated Elements */}
+                <g>
+                  <rect x="90" y="150" width="0" height="20" rx="3" ry="3" fill="#4a90e2">
+                    <animate attributeName="width" from="0" to="360" dur="1s" begin="4.6s" fill="freeze"/>
+                  </rect>
+                </g>
+                <g>
+                  <rect x="90" y="180" width="0" height="20" rx="3" ry="3" fill="#4a90e2">
+                    <animate attributeName="width" from="0" to="320" dur="1s" begin="4.8s" fill="freeze"/>
+                  </rect>
+                </g>
+                <g>
+                  <rect x="90" y="210" width="0" height="20" rx="3" ry="3" fill="#4a90e2">
+                    <animate attributeName="width" from="0" to="280" dur="1s" begin="5s" fill="freeze"/>
+                  </rect>
+                </g>
+                <g>
+                  <rect x="510" y="150" width="0" height="40" rx="3" ry="3" fill="#9b59b6">
+                    <animate attributeName="width" from="0" to="200" dur="0.8s" begin="5.2s" fill="freeze"/>
+                  </rect>
+                </g>
+                <g>
+                  <rect x="510" y="200" width="0" height="40" rx="3" ry="3" fill="#9b59b6">
+                    <animate attributeName="width" from="0" to="200" dur="0.8s" begin="5.4s" fill="freeze"/>
+                  </rect>
+                </g>
+                <g>
+                  <rect x="510" y="250" width="0" height="40" rx="3" ry="3" fill="#9b59b6">
+                    <animate attributeName="width" from="0" to="200" dur="0.8s" begin="5.6s" fill="freeze"/>
+                  </rect>
+                </g>
+              </svg>
               <div className="absolute -bottom-6 -right-6 bg-white rounded-full p-4 shadow-xl">
                 <motion.div
                   initial={{ rotate: 0 }}
