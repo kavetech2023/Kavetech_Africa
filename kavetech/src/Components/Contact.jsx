@@ -127,7 +127,7 @@ const Contact = () => {
                   <dt className="flex-shrink-0">
                     <Phone className="h-6 w-6 text-purple-400" aria-hidden="true" />
                   </dt>
-                  <dd className="ml-3">+254 123 456 789</dd>
+                  <dd className="ml-3">+254 798 566 564</dd>
                 </div>
                 <div className="mt-4 flex items-center">
                   <dt className="flex-shrink-0">
@@ -139,7 +139,7 @@ const Contact = () => {
                   <dt className="flex-shrink-0">
                     <MapPin className="h-6 w-6 text-purple-400" aria-hidden="true" />
                   </dt>
-                  <dd className="ml-3">123 Innovation Street, Nairobi, Kenya</dd>
+                  <dd className="ml-3">Runda, Nairobi, Kenya</dd>
                 </div>
               </dl>
             </div>
