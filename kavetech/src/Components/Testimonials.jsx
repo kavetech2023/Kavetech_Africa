@@ -21,39 +21,39 @@ const Testimonial = ({ name, role, quote, image }) => (
 const testimonials = [
   {
     name: "Anna",
-    role: "Recruiter",
+    role: "CEO, Global E-commerce Platform",
     image: "https://randomuser.me/portraits/women/1.jpg",
-    quote: "This AI tool has been a game-changer for our hiring process. It's significantly reduced our time-to-hire by identifying top-tier candidates who perfectly align with our company's needs."
+    quote: "KaveTech's custom software solution increased our international sales by 200%. Their tailored approach to our unique business needs was impressive. They're not just developers, they're growth partners."
   },
   {
     name: "Jessica",
-    role: "Career Counselor",
+    role: "CMO, Multinational Retail Corporation",
     image: "https://randomuser.me/portraits/women/15.jpg",
-    quote: "I'm impressed with how this AI platform provides personalized career guidance. It's helped my clients discover hidden talents and explore new opportunities they hadn't considered before."
+    quote: "The mobile app KaveTech developed for us has been downloaded in over 50 countries. It's user-friendly, scalable, and has significantly boosted our global brand presence. Their expertise in international markets is unparalleled."
   },
   {
     name: "Mark",
-    role: "Tech Entrepreneur",
+    role: "Founder, Tech Startup (Now in 10 Countries)",
     image: "https://randomuser.me/portraits/men/1.jpg",
-    quote: "The AI-powered resume optimization feature is invaluable. It's not only improving the quality of resumes but also helping candidates tailor their applications to specific job openings."
+    quote: "KaveTech's custom CRM system allowed us to expand into 7 new markets in just one year. Their software adapts seamlessly to different cultural and regulatory environments. They truly understand global business needs."
   },
   {
     name: "Emily",
-    role: "Job Seeker",
+    role: "CTO, International Fintech Company",
     image: "https://randomuser.me/portraits/women/4.jpg",
-    quote: "I've landed multiple interviews thanks to the AI-powered job matching. The platform has saved me countless hours of searching and has connected me with relevant opportunities."
+    quote: "The blockchain-based payment system KaveTech built for us is now handling transactions in 30+ currencies. Their innovative approach and attention to international compliance have been crucial to our global expansion."
   },
   {
-    name: "Phoebe",
-    role: "Economist",
+    name: "Dr. Phoebe",
+    role: "Director, Global Health Non-Profit",
     image: "https://randomuser.me/portraits/women/13.jpg",
-    quote: "AI-driven job matching has the potential to revolutionize the labor market. It can help bridge the gap between job seekers and employers, leading to increased efficiency and economic growth."
+    quote: "KaveTech developed a telemedicine platform that's now connecting doctors and patients across 15 countries. Their ability to create software that bridges language and cultural gaps is remarkable."
   },
   {
     name: "James",
-    role: "AI Entrepreneur",
+    role: "COO, International Logistics Firm",
     image: "https://randomuser.me/portraits/men/5.jpg",
-    quote: "The advancements in natural language processing and machine learning have enabled AI to provide increasingly accurate and relevant job recommendations."
+    quote: "The supply chain management system from KaveTech increased our operational efficiency by 40% across our global network. Their software's ability to handle complex international logistics is game-changing."
   }
 ]
 
@@ -64,7 +64,7 @@ export default function Testimonials() {
         <div className="text-center mb-12">
           <h2 className="text-sm font-semibold text-primary uppercase tracking-wide">Testimonials</h2>
           <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-            What our clients say
+            What our global clients say
           </h3>
         </div>
         <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
