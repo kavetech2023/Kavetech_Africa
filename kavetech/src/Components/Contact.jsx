@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Send, Phone, Mail, MapPin } from 'lucide-react';
-import emailjs from 'emailjs-com';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -19,16 +18,18 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', {
-      from_name: formData.name,
-      from_email: formData.email,
-      message: formData.message,
-      to_email: 'kavetch@gmail.com',
-    }, 'YOUR_USER_ID')
-    .then((result) => {
+    const form = e.target;
+    const data = new FormData(form);
+    const action = e.target.action;
+    fetch(action, {
+      method: 'POST',
+      body: data,
+    })
+    .then(() => {
       toast.success('Message sent successfully!');
       setFormData({ name: '', email: '', message: '' });
-    }, (error) => {
+    })
+    .catch((error) => {
       toast.error('Failed to send message. Please try again.');
     });
   };
@@ -57,7 +58,7 @@ const Contact = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="bg-white shadow-2xl rounded-lg p-8"
           >
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} action="https://script.google.com/macros/s/YOUR_GOOGLE_SCRIPT_ID/exec" method="POST" className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700">
                   Name
