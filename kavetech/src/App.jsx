@@ -26,7 +26,7 @@ const App = () => {
           <AIChatBot />
         
       </div>
-      
+
     </>
   );
 };
