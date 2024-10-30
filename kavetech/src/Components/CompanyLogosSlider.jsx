@@ -33,7 +33,7 @@ export default function CompanyLogosSlider() {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 text-center mb-12">
-            We use the same technologies as
+            Our Partners
           </h2>
         </motion.div>
         <div className="relative overflow-hidden">
